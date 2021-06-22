@@ -72,8 +72,7 @@ class Carrinho extends Component {
           renderItem={({item, index}) => (
             this.renderItem(item, index)
           )}
-          keyExtractor={(item) => item.id}
-          extraData={this.state.selectedId}
+          keyExtractor={(item, index) => index}
         />
       </SafeAreaView>
     );
